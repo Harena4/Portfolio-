@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haja Tinah Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navigation">
+        <div class="logo-animated">PORTFOLIO</div>
+        
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+              
+        <ul id="nav-list">
+            <li><a href="#home">Profil</a></li>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="haja.jpeg" alt="haja.jpeg">
+            </div>
+            <div class="hero-text">
+                <h2>Bonjour, je suis</h2>
+                <h1 class="name-styled">RAKOTOZAFY</h1>
+                <h3>Nomenaharena Haja Tinah</h3>
+                <p>Étudiant en Informatique</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="a-propos" class="section">
+        <div class="card">
+            <h2>À PROPOS</h2>
+            <div class="info-details">
+                <p>Je suis <strong>RAKOTOZAFY Nomenaharena Haja Tinah</strong> un passionné de technologie résident à
+                <strong>Fianarantsoa</strong>. Actuellement étudiant en <strong>Informatique</strong>, je m'efforce de concevoir des solutions numériques innovantes et esthétiques. 
+                Mon objectif est de mettre mes compétences au service de projets ambitieux tout en continuant à apprendre et à perfectionner mon savoir-faire dans le monde du développement.</p>
+              
+            </div>
+        </div>
+    </section>
+
+    <section id="competences" class="section">
+        <div class="card">
+            <h2>COMPÉTENCES</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <div class="circle" style="--p:90; --c:#00d4ff;"><span>90%</span></div>
+                    <span>HTML</span>
+                </div>
+                <div class="skill">
+                    <div class="circle" style="--p:75; --c:#00d4ff;"><span>75%</span></div>
+                    <span>CSS</span>
+                </div>
+                <div class="skill">
+                    <div class="circle" style="--p:95; --c:#00d4ff;"><span>95%</span></div>
+                    <span>Office</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="card">
+            <h2>CONTACT</h2>
+            <div class="contact-links">
+                <a href="mailto:hajatinah32@gmail.com"><i class="fas fa-envelope"></i> hajatinah32@gmail.com</a>
+                <a href="tel:+261341322989"><i class="fas fa-phone"></i> 034 13 229 89</a>
+                <a href="https://www.facebook.com/profile.php?id=100088235255476" target="_blank"><i class="fab fa-facebook"></i>Häjä Tįnåh</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>&copy; 2026 Mr. Haja Tinah</footer>
+
+    <script>
+        const navLinks = document.querySelectorAll('#nav-list li a');
+        const checkBox = document.getElementById('check');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => { checkBox.checked = false; });
+        });
+    </script>
+
+</body>
+</html>
